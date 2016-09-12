@@ -10,7 +10,8 @@
         android:id="@+id/map_view"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:layout_below="@+id/search_actionbar">
+        android:layout_below="@+id/search_actionbar"
+        android:clickable="true">
 
     </com.baidu.mapapi.map.MapView>
     <ListView

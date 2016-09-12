@@ -19,8 +19,8 @@
         android:layout_marginStart="@dimen/medium_margin"
         android:orientation="horizontal">
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:src="@drawable/search_white"/>
         <RelativeLayout
             android:layout_width="match_parent"
