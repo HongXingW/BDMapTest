@@ -48,7 +48,7 @@ public class MapActivity extends AppCompatActivity{
         searchText = (EditText)findViewById(R.id.search_input);
 
         data = new ArrayList<>();
-        adapter = new PositionListAdapter(this,data);
+        adapter = new PositionListAdapter(this, new ArrayList<PositionModel>());
         listView.setAdapter(adapter);
 
         mPoiSearch = PoiSearch.newInstance();
@@ -95,6 +95,7 @@ public class MapActivity extends AppCompatActivity{
             List<PoiInfo> infos = poiResult.getAllPoi();
 
             if(infos != null) {
+                data.clear();
                 for (int i = 0; i < infos.size(); i++) {
                     PositionModel model = new PositionModel(infos.get(i).name, infos.get(i).address);
                     data.add(model);
